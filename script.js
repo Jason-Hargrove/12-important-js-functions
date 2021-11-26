@@ -100,6 +100,16 @@ log(isStr(345));
 log(isStr(true));
 
 
+// ===== 8. Use isNull =====
+const isNull = value => value === null || value === undefined;
+
+log(isNull(null));
+log(isNull());
+log(isNull(123));
+log(isNull("J"));
+
+
+
 
 
 
