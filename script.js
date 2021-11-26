@@ -93,7 +93,7 @@ log(isNum("JavaScript"));
 
 
 // ===== 7. Use isStr to verify a string =====
-const isStr = value => typeof vlaue === 'string';
+const isStr = value => typeof value === 'string';
 
 log(isStr('JavaScript'));
 log(isStr(345));
