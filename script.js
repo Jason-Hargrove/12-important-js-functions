@@ -147,8 +147,17 @@ defaultTo5(arg2) // 5
 
 
 // ===== 12. Ternary operator =====
+function temperature(temp) {
+  return (temp > 39 || temp < 35.5) ? "Visit Doctor"
+    : (temp < 37.5 && temp > 36.5) ? "Go Out and Play!!"
+      : (temp <= 39 && temp >= 35.5) ? "Take Some Rest!" : ''
+}
 
-
+log(temperature(38));
+log(temperature(36));
+log(temperature(39.1));
+log(temperature(35.1));
+log(temperature(37));
 
 
 // To log output: cd into the file. In the terminal enter >node script
