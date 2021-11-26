@@ -61,6 +61,17 @@ log(evilDead);
 
 
 // ===== 4. Shorten an array =====
+const big_array = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+big_array.length = 4;
+log(big_array);
+
+const big_array1 = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+big_array1.length = 3;
+log(big_array1);
+
+const big_array2 = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+big_array2.length = 5;
+log(big_array2);
 
 
 
