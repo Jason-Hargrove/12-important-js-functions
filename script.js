@@ -1,7 +1,7 @@
-// 12 Important JavaScript Functions Every Web Developer Should Know
+// ===== 12 Important JavaScript Functions Every Web Developer Should Know =====
 
-// 1. Shorten the console log.
 
+// ===== 1. Shorten the console log. =====
 const log = console.log;
 // const log = console.log.bind(documet);
 log("does it work?");
@@ -9,8 +9,7 @@ log("yes");
 log(5);
 
 
-// 2. Merge two arrays into console
-
+// ===== 2. Merge two arrays into one. =====
 const array1 = [ "One", "Two", "Three" ];
 const array2 = [ "Four", "Five", "Six" ];
 const merge2 = array1.concat(array2);
@@ -30,5 +29,42 @@ const array7 = [ "Heavy", "Metal", "Thunder" ];
 const array8 = [ "Moving", 6, "Times"];
 const mergeAll = array1.concat(array2, array3, array4, array5, array6, array7, array8);
 log(mergeAll);
+
+
+// ===== 3. Merge two objects. =====
+const user = {
+  name: "Paul Knulst",
+  gender: "Male"
+};
+
+const article = {
+  title: "JavaScript Tips",
+  date: "2021-11-19"
+};
+const summary = {...user, ...article};
+log(summary);
+
+
+const character = {
+  name: "Ash",
+  ocupation: "Sales Clerk",
+  years: 10
+};
+
+const villan = {
+  title: "Deadite",
+  whatYouDo: "Eating People",
+  age: 100000
+};
+const evilDead = {...character, ...villan};
+log(evilDead);
+
+
+// ===== 4. Shorten an array =====
+
+
+
+
+
 
 // To log output: cd into the file. In the terminal enter >node script
