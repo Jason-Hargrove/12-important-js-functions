@@ -109,6 +109,16 @@ log(isNull(123));
 log(isNull("J"));
 
 
+// ===== 9, Calculate the performance of a function. =====
+// Must require from perf_hooks module depending on node.js version.
+const {performance} = require('perf_hooks');
+const t0 = performance.now();
+// some program
+function testThis() { return 2 + 2 };
+// end some program
+const t1 = performance.now();
+const total = t0 - t1;
+log("function takes " + total + " miliseconds");
 
 
 
