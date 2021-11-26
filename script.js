@@ -129,5 +129,26 @@ const delDuplicates = array => [...new Set(array)];
 log(delDuplicates(someArray));
 
 
+// ===== 11. Use logical AND/OR for conditions =====
+const input = 2;
+input === 5 && log("it is 5");
+input === 5 || log("it is not 5");
+
+// or for assigning values
+
+function defaultTo5(arg) {
+  arg = arg || 5;
+  log(arg);
+}
+let arg1 = 2;
+let arg2 = null;
+defaultTo5(arg1) // 2
+defaultTo5(arg2) // 5
+
+
+// ===== 12. Ternary operator =====
+
+
+
 
 // To log output: cd into the file. In the terminal enter >node script
