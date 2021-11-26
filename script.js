@@ -109,7 +109,7 @@ log(isNull(123));
 log(isNull("J"));
 
 
-// ===== 9, Calculate the performance of a function. =====
+// ===== 9. Calculate the performance of a function. =====
 // Must require from perf_hooks module depending on node.js version.
 const {performance} = require('perf_hooks');
 const t0 = performance.now();
@@ -121,6 +121,12 @@ const total = t0 - t1;
 log("function takes " + total + " miliseconds");
 
 
+// ===== 10. Remove duplicates for an array without a loop. =====
+const someArray = [
+  "One", "Two", "Three", "Four", "Five", "Six", "Seven", "One", "Two", "Three", "Four", "Five", "Six", "Ten", "Twelve"
+];
+const delDuplicates = array => [...new Set(array)];
+log(delDuplicates(someArray));
 
 
 
