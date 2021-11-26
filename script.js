@@ -61,17 +61,43 @@ log(evilDead);
 
 
 // ===== 4. Shorten an array =====
-const big_array = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+const big_array = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven" ];
 big_array.length = 4;
 log(big_array);
 
-const big_array1 = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+const big_array1 = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven" ];
 big_array1.length = 3;
 log(big_array1);
 
-const big_array2 = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+const big_array2 = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven" ];
 big_array2.length = 5;
 log(big_array2);
+
+
+// ===== 5. Shuffle an array =====
+const big_array3 = [ "One", "Two", "Three", "Four", "Five", "Six", "Seven" ];
+big_array3.sort(function(){ return Math.random() - 0.5});
+log(big_array3);
+
+const big_array4 = [ "Razors", "Guns", "Knives", "With", "Me" ];
+big_array4.sort(function(){ return Math.random() - 0.5});
+log(big_array4);
+
+
+// ===== 6. Use isNum to verify a number =====
+function isNum(n) { return !isNaN(parseFloat(n)) && isFinite(n); }
+
+log(isNum(1337));
+log(isNum(13.37));
+log(isNum("JavaScript"));
+
+
+// ===== 7. Use isStr to verify a string =====
+const isStr = value => typeof vlaue === 'string';
+
+log(isStr('JavaScript'));
+log(isStr(345));
+log(isStr(true));
 
 
 
